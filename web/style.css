@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
+
+* {
+  font-family: "Comfortaa", cursive;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: #1e2d44; 
+}
+
+.container > h2 {
+   display: flex;
+  justify-content: center;
+  padding: 30px 0; 
+ text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+      font-size: 72px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.cart {
+  display: flex;
+  justify-content: center;
+}
+
+
+.products {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 150vh;
+}
+
+.product {
+  background: rgb(218, 203, 203);
+  box-shadow: -3px -3px 7px #ffffffb2, 3px 3px 7px rgba(94, 104, 121, 0.945);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 60%;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.product p {
+    font-size: 20px;
+    color: rgb(177, 18, 18);
+  padding: 10px;
+}
+
+.product > img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.product-info {
+  padding: 20px;
+  width: 100%;
+  position: relative;
+}
+
+.product-remove button {
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+  padding: 10px 20px;
+  background-color: #1e2d44; 
+  color: white;
+  cursor: pointer;
+  border-radius: px;
+  box-shadow: 0 9px 8px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.product-remove button:disabled {
+  pointer-events: none;
+}
+
+.product-remove button:hover {
+  color: #fff;
+  background-color: #1a1a1a;
+  box-shadow: 0 19px 38px rgba(167, 39, 39, 0.3),
+    0 15px 12px rgba(212, 39, 39, 0.22);
+  transform: translateY(-2px);
+}
+
+.product-remove button:active {
+  box-shadow: none;
+  transform: translateY(1px);
+}
+
+
+.cart-total {
+  position: absolute;
+  width: 35%;
+  background: rgb(218, 203, 203);
+  box-shadow: -4px -4px 8px #ffffffb2, 3px 3px 7px rgba(94, 104, 121, 0.945);
+  left: 60%;
+  padding: 20px;
+  height: 50%;
+  border: 1px solid silver;
+  border-radius: 5px;
+}
+
+.cart-total p {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  background: linear-gradient(to right, red , blue);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-size: 20px;
+  box-shadow: inset -3px -3px 7px #ffffffb2,
+    inset 3px 3px 7px rgba(94, 104, 121, 0.945);
+}
+
+
+.cart-total a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  box-shadow: inset -3px -3px 7px hsl(216, 39%, 19%),
+  inset 3px 3px 7px rgba(94, 104, 121, 0.945);
+  border: 2px solid #1a1a1a;
+  border-radius: 15px;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  width: 50%;
+  position: relative;
+  top: 3%;
+}
+.cart-total a:hover {
+  color: #fff;
+  background: hsl(216, 39%, 19%);
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  transform: translateY(-2px);
+}
+
+.cart-total a:active {
+  box-shadow: none;
+  transform: translateY(1px);
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Food Order Assaigment</h2>
+        <div class="cart">
+           
+            <div class="products">
+                <div class="product">
+                    <img src="./images/Chicken-Biryani-hyd.jpg">
+                    
+                    <div class="product-info">
+                        <p class="product-name">Chicken biryani</p>
+                        <p class="product-price">Rs:250</p>
+                        <p class="product-quantity">
+                            <select name="your-items" class="selectedItems">
+                                <option value="volvo">Single Biryani</option>
+                                <option value="saab">Double Biryani</option>
+                            </select>
+                        </p>
+                        <p class="product-remove">
+                            <button class="add" data-index="0">Add to Cart</button>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <img src="./images/haleem.jpeg">
+                    <div class="product-info">
+                        <p class="product-name">Chicken Haleem</p>
+                        <p class="product-price">Rs:170</p>
+                        <p class="product-quantity">
+                            <select name="your-items" class="selectedItems">
+                                <option value="volvo">Haleem Single</option>
+                                <option value="saab">Haleem 1kg</option>
+                            </select>
+                        </p>
+                        <p class="product-remove">
+                            <button class="add2" data-index="1">Add to Cart</button>
+                        </p>
+                    </div>
+                </div>
+           
+
+            <div class="cart-total">
+                <p>
+                    <span>Total Price</span>
+                    <span class="total-price">Rs:</span>
+                </p>
+                <p>
+                    <span>Number of Carts</span>
+                    <span class="total-items">items:</span>
+                </p>
+                <p>
+                    <span class="order">Your Order</span>
+                    <span class="total-amount">total Amount</span>
+                </p>
+                <a href="#" class="place-order">Place your order</a>
+            </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <script defer src="main.dart.js"></script>
+    <script defer src="main.dart" type="application/dart"></script>
+    <script defer src="https://dart.dev/webcomponents/webcomponents.min.js"></script>
+    <script defer src="https://dart.dev/webcomponents/webcomponents.min.js" data-pub-inline></script>
+
+</body>
+
+</html>
